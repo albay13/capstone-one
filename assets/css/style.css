@@ -95,24 +95,7 @@
          width: 500px;
     }
 }
- #cover{
-     background: url('../images/Troy Logistics Logo-sm.png') center center no-repeat;
-     background-size: cover;
-     color: white;
-     height: 328px;
-     text-align: center;
-     display: flex;
-     align-items: center;
-}
- #cover2{
-     background: url('../images/Troy Logistics Logo-sm.png') center center no-repeat;
-     background-size: cover;
-     color: white;
-     height: 328px;
-     text-align: center;
-     display: flex;
-     align-items: center;
-}
+
  #cover-caption{
      width: 100% 
 }
@@ -122,6 +105,11 @@
  .card{
      padding: 1rem;
 }
+div.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 /*about*/
  #about-bg-img{
      background: url('../images/Troy Logistics Logo-sm.png') center center no-repeat;
@@ -132,11 +120,7 @@
      color: white;
      padding: 1.875rem;
 }
- @media(max-width: 500px) {
-     #cover-caption h1{
-         font-family: italic;
-    }
-}
+
 /*services*/
  .services-text{
      color: black;
