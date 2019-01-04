@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel|Dosis" rel="stylesheet">
+	<link href="assets/css/datetimepicker.css" rel="stylesheet" type="text/css"/>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		#schedule-header{
 		  /* The image used */
@@ -35,13 +38,13 @@
 
 	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 	    <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-	      <li class="nav-item active">
+	      <li class="nav-item">
 	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="tracking.html">Tracking</a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item active">
 	        <a class="nav-link" href="schedule.html">Schedule a Pick-up</a>
 	      </li>
 	      <li class="nav-item">
@@ -53,44 +56,243 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
+	      <li class="nav-item mr-1">
+	      	 <button class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase" type="submit">Register</button>
+	      </li>
 	    </ul>
 	  </div>
 </nav>
 <!-- Header -->
 <div id="schedule-header" class="text-center">
-	<h1>Schedule a Pick-up</h1>
-	<p>
+	<h1 class="wow fadeInUp">Schedule a Pick-up</h1>
+	<p class="wow fadeInDown">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 	</p>
 </div>
 <br/><br/>
 <div class="container">
-	<span class="label label-danger"><h4>Freely choose your desired date.</h4></span>
-	<hr style="border-top: 1px dotted black;">
-	<div class="row">
-		<div class="col-lg-6">
-			<h5>You can now schedule a pick-up via our online service. An LBC Team Member will head to your doorstep on your specified date.</h5>
+	<form>
+		<span class="label label-danger"><h4>Freely choose your desired date.</h4></span>
+		<hr style="border-top: 1px dotted black;">
+		<div class="row">
+			<div class="col-lg-6">
+				<h5>You can now schedule a pick-up via our online service. An LBC Team Member will head to your doorstep on your specified date.</h5>
+				<div style="padding: 0;" class="card text-center mb-2">
+				    <div id="picker-no-time"></div>
+				    <input type="hidden" id="result2" value="" />
+				</div>
+				<h5 class="text-center">Choose preferred pick-up date.</h5>
+				<h6>There are no available appointments on Sunday, Special and Regular Holidays. Cut-off for next-day pick-up is 11:59pm.</h6>
+				<div class="card" style="background-color: #58748D; color: white;">
+					<h4 class="card-title">When will your item be ready and packed?</h4>
+					<select class="form-control">
+						<option value="8">8:00 AM</option>
+						<option value="8">9:00 AM</option>
+						<option value="8">10:00 AM</option>
+						<option value="8">11:00 AM</option>
+						<option value="8">12:00 PM</option>
+						<option value="8">1:00 PM</option>
+						<option value="8">2:00 PM</option>
+						<option value="8">3:00 PM</option>
+						<option value="8">4:00 PM</option>
+						<option value="8">5:00 PM</option>
+					</select>
+					<p class="card-text mt-3">
+						Your LBC Agent will arrive 2-3 hours after your specified time. Please have your items ready and packed by this time to ensure a smooth pick up.
+					</p>
+				</div>
+				<!-- Card Package -->
+				<div id="card-package" class="card mt-4" style="background-color: #58748D; color: white;">
+					<h3 class="card-title"><img src="assets/images/icons/package.png"> Package</h3>
+					<p class="card-text">Note: Prohibited items are not allowed. Please see the full list of prohibited items by clicking here.</p>
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label class="control-label text-light">Quantity</label>
+							<input type="number" name="package_quantity" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-9">
+							<label class="control-label text-light">Description</label>
+							<textarea class="form-control" rows="3"></textarea>
+							<small><span style="color: red;">*</span> Please describe your shipment/s: dimensions (LxWxH) in centimeters, if you need us to bring a box or pouch and what type of item/s you are shipping.</small>
+						</div>
+					</div>
+				</div>
+				<!-- Card Documents -->
+				<div id="card-documents" class="card mt-4" style="background-color: #58748D; color: white;">
+					<h3 class="card-title"><img src="assets/images/icons/message.png"> Documents</h3>
+					<p class="card-text">Note: Prohibited items are not allowed. Please see the full list of prohibited items by clicking here.</p>
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label class="control-label text-light">Quantity</label>
+							<input type="number" name="package_quantity" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-9">
+							<label class="control-label text-light">Description</label>
+							<textarea class="form-control" rows="3"></textarea>
+							<small><span style="color: red;">*</span> Describing your document is optional, but may help our rider in handling it.</small>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<div class="form-group row">
+					<div class="col-lg-6 my-sm-2 my-lg-0">
+						<button type="button" id="btn_send_package" class="btn btn-danger form-control text-uppercase"><img src="assets/images/icons/package.png" class="float-left">  Send Package</button>
+						<!-- Icon made by itim2101 from www.flaticon.com -->
+					</div>
+					<div class="col-lg-6">
+						<button type="button" id="btn_send_documents" class="btn btn-danger form-control text-uppercase"><img src="assets/images/icons/message.png" class="float-left"> Send Documents</button>
+						<!-- Icon made by wanicon from www.flaticon.com -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h4>Shipper Information</h4>
+				<h6>Please fill-in your personal information</h6>
+				<div class="card px-4" style="background-color: #58748D;">
+					<div class="form-group row">
+						<div class="col-lg-4">
+							<label class="control-label text-light">First name</label>
+							<input type="text" name="first_name" class="form-control" placeholder="Ex. Juan" required>
+						</div>
+						<div class="col-lg-4">
+							<label class="control-label text-light">Middle name</label>
+							<input type="text" name="first_name" class="form-control" placeholder="Benoza" required>
+						</div>
+						<div class="col-lg-4">
+							<label class="control-label text-light">Last name</label>
+							<input type="text" name="first_name" class="form-control" placeholder="Quinto" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-12">
+							<label class="control-label text-light">Street</label>
+							<input type="text" name="street" class="form-control" placeholder="472 Shinn Street New York NY 10001" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label class="control-label text-light">Region</label>
+							<select class="form-control" >
+								<option value="Metro">Metro Manila</option>
+							</select>
+						</div>
+						<div class="col-lg-6">
+							<label class="control-label text-light">City/Municipality</label>
+							<select class="form-control">
+								<option value="city">Select one</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-6">
+							<label class="control-label text-light">Mobile Number</label>
+							<input type="text" name="mobile_number" class="form-control" placeholder="09xxxxxxxxx" required>
+						</div>
+						<div class="col-lg-6">
+							<label class="control-label text-light">Landline Number (Optional)</label>
+							<input type="text" name="landline_number" class="form-control" placeholder="833-xx-xx" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-lg-12">
+							<label class="control-label text-light">Special Instruction (Optional)</label>
+							<textarea class="form-control" rows="3"></textarea>
+							<span class="small text-light"><span style="color: red;">*</span> Special Instructions are NOT REQUIRED, but might help your LBC Team Member find your pick-up location faster if you indicate landmarks and general directions.</span>
+						</div>
+					</div>
+					<div class="form-group row">
+					<div class="col-lg-12">
+						<button class="btn btn-danger form-control btn-block">Proceed <i class="fas fa-angle-double-right"></i></button>
+					</div>
+				</div>
+				</div>
+				<br/>
+			</div>
 		</div>
-	</div>
+	</form>
 </div>
 <br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Description</h5>
+					<p class="text-light text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Tracking</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Schedule a Pick-up</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Contacts</h5>
+					<p class="text-light">472  Shinn Street New York NY 10001</p>
+					<p class="text-light">212-792-5223</p>
+					<p class="text-light">917-851-1191</p>
+					<p class="text-light">w5rskmbkews@claimab.com</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p class="h6">&copy All rights Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">TroyLogistics</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+</section>
 	<script src="assets/js/jquery/jquery.min.js"></script>
   	<script src="assets/js/bootstrap-js/bootstrap.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+ 	<script>
+	     new WOW().init();
+  	</script>
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="assets/js/datetimepicker.js"></script>
+	<script type="text/javascript">
+	    $(document).ready( function () {
+	        $('#picker-no-time').dateTimePicker({ showTime: false, dateFormat: 'DD/MM/YYYY'});
+	    })
+	</script>
  	<script>
 	  	$(document).ready(function() {
 	        // Transition effect for navbar 
 	        $(window).scroll(function() {
-	          // checks if window is scrolled more than 200px, adds/removes solid class
-	          if($(this).scrollTop() > 200) { 
+	          // checks if window is scrolled more than 50px, adds/removes solid class
+	          if($(this).scrollTop() > 50) { 
 	              $('.navbar').addClass('solid');
 	              $('.navbar-brand').css("font-size","1.5rem");
 	              $('.navbar').addClass('navbar-dark');
@@ -106,5 +308,20 @@
 	        });
 		});
   	</script>
+  	<script>
+  		$(document).ready(function(){
+  			$("#card-package").hide();
+  			$("#card-documents").hide();
+  			$(document).on('click','#btn_send_package',function(){
+  				$("#card-package").fadeIn(500);
+  				$("#btn_send_package").hide();
+  			});
+  			$(document).on('click','#btn_send_documents',function(){
+  				$("#card-documents").fadeIn(500);
+  				$("#btn_send_documents").hide();
+  			});
+  		});
+  	</script>
+  
 </body>
 </html>
