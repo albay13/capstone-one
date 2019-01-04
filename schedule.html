@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule a Pick-up | TroyLogistics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Dosis" rel="stylesheet">
+	<style type="text/css">
+		#schedule-header{
+		  /* The image used */
+		  background-image: url("assets/images/pick-up.jpg");
+
+		  /* Set a specific height */
+		  height: 400px; 
+
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  padding-top: 200px;
+		}
+	</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+	  <a class="navbar-brand text-uppercase ml-5" href="#">Troy Logistics</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	    <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="tracking.html">Tracking</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="schedule.html">Schedule a Pick-up</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="services.html">Services</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="contact.html">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+</nav>
+<!-- Header -->
+<div id="schedule-header" class="text-center">
+	<h1>Schedule a Pick-up</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+	</p>
+</div>
+<br/><br/>
+<div class="container">
+	<span class="label label-danger"><h4>Freely choose your desired date.</h4></span>
+	<hr style="border-top: 1px dotted black;">
+	<div class="row">
+		<div class="col-lg-6">
+			<h5>You can now schedule a pick-up via our online service. An LBC Team Member will head to your doorstep on your specified date.</h5>
+		</div>
+	</div>
+</div>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+	<script src="assets/js/jquery/jquery.min.js"></script>
+  	<script src="assets/js/bootstrap-js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ 	<script>
+	  	$(document).ready(function() {
+	        // Transition effect for navbar 
+	        $(window).scroll(function() {
+	          // checks if window is scrolled more than 200px, adds/removes solid class
+	          if($(this).scrollTop() > 200) { 
+	              $('.navbar').addClass('solid');
+	              $('.navbar-brand').css("font-size","1.5rem");
+	              $('.navbar').addClass('navbar-dark');
+	              $('.navbar').removeClass('navbar-light');
+	              $("#logo").hide();
+	          } else {
+	              $('.navbar').removeClass('solid');
+	              $('.navbar-brand').css("font-size","1.5rem");
+	              $('.navbar').removeClass('navbar-dark');
+	              $('.navbar').addClass('navbar-light');
+	              $("#logo").show();
+	          }
+	        });
+		});
+  	</script>
+</body>
+</html>
