@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>Schedule a Pick-up | TroyLogistics</title>
+	<link rel="icon" href="assets/images/logo.png">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -25,6 +26,7 @@
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		  padding-top: 200px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 	</style>
 </head>
@@ -57,7 +59,7 @@
 	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
 	      <li class="nav-item mr-1">
-	      	 <button class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase" type="submit">Register</button>
+	      	 <button id="btnRegister" class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase" type="submit">Register</button>
 	      </li>
 	    </ul>
 	  </div>
@@ -84,7 +86,7 @@
 				</div>
 				<h5 class="text-center">Choose preferred pick-up date.</h5>
 				<h6>There are no available appointments on Sunday, Special and Regular Holidays. Cut-off for next-day pick-up is 11:59pm.</h6>
-				<div class="card" style="background-color: #58748D; color: white;">
+				<div class="card card-schedule" style="background-color: #58748D; color: white;">
 					<h4 class="card-title">When will your item be ready and packed?</h4>
 					<select class="form-control">
 						<option value="8">8:00 AM</option>
@@ -103,7 +105,7 @@
 					</p>
 				</div>
 				<!-- Card Package -->
-				<div id="card-package" class="card mt-4" style="background-color: #58748D; color: white;">
+				<div id="card-package" class="card mt-4 card-schedule" style="background-color: #58748D; color: white;">
 					<h3 class="card-title"><img src="assets/images/icons/package.png"> Package</h3>
 					<p class="card-text">Note: Prohibited items are not allowed. Please see the full list of prohibited items by clicking here.</p>
 					<div class="form-group row">
@@ -121,7 +123,7 @@
 					</div>
 				</div>
 				<!-- Card Documents -->
-				<div id="card-documents" class="card mt-4" style="background-color: #58748D; color: white;">
+				<div id="card-documents" class="card mt-4 card-schedule" style="background-color: #58748D; color: white;">
 					<h3 class="card-title"><img src="assets/images/icons/message.png"> Documents</h3>
 					<p class="card-text">Note: Prohibited items are not allowed. Please see the full list of prohibited items by clicking here.</p>
 					<div class="form-group row">
@@ -153,7 +155,7 @@
 			<div class="col-lg-6">
 				<h4>Shipper Information</h4>
 				<h6>Please fill-in your personal information</h6>
-				<div class="card px-4" style="background-color: #58748D;">
+				<div class="card px-4 card-schedule" style="background-color: #58748D;">
 					<div class="form-group row">
 						<div class="col-lg-4">
 							<label class="control-label text-light">First name</label>
@@ -294,13 +296,11 @@
 	          // checks if window is scrolled more than 50px, adds/removes solid class
 	          if($(this).scrollTop() > 50) { 
 	              $('.navbar').addClass('solid');
-	              $('.navbar-brand').css("font-size","1.5rem");
 	              $('.navbar').addClass('navbar-dark');
 	              $('.navbar').removeClass('navbar-light');
 	              $("#logo").hide();
 	          } else {
 	              $('.navbar').removeClass('solid');
-	              $('.navbar-brand').css("font-size","1.5rem");
 	              $('.navbar').removeClass('navbar-dark');
 	              $('.navbar').addClass('navbar-light');
 	              $("#logo").show();
@@ -310,6 +310,10 @@
   	</script>
   	<script>
   		$(document).ready(function(){
+  			// Page Redirect
+	  		$(document).on('click','#btnRegister',function(){
+	  			window.location.href = "register.html";
+	  		});
   			$("#card-package").hide();
   			$("#card-documents").hide();
   			$(document).on('click','#btn_send_package',function(){

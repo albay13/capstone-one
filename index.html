@@ -27,6 +27,26 @@
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		}
+		.parallax-pricing { 
+		   /*The image used*/ 
+		  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/header.jpg");
+
+		   /*Set a specific height*/ 
+		  height: 700px; 
+
+		   /*Create the parallax scrolling effect */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		@media (max-width: 800px){
+			.parallax-pricing{
+				background-size: auto;
+				height: auto;
+				background-repeat: no-repeat;
+		  		background-size: cover;
+			}
+		}
 		.service-icon{
 			background-color: rgba(52, 203, 255, 0.2);
 		    width: 90px;
@@ -34,6 +54,12 @@
 		    line-height: 90px;
 		    border-radius: 50%;
 		 
+		}
+		.card-footer{
+			margin:0px -1px -1px -1px;
+		}
+		.card-pricing{
+			padding: 0;
 		}
 	</style>
 	
@@ -67,7 +93,7 @@
 	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
 	      <li class="nav-item mr-1">
-	      	 <button class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase" type="submit">Register</button>
+	      	 <button id="btnRegister" style="border-radius: 5px;" class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase " type="button">Register</button>
 	      </li>
 	    </ul>
 	  </div>
@@ -341,7 +367,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-				<img id="about-img" class="" src="assets/images/about.jpg" width="650">
+				<img id="about-img" class="img-fluid" src="assets/images/about.jpg">
 			</div>
 			<div class="col-lg-5">
 				<h3 class="text-uppercase wow slideInUp">what we do</h3>
@@ -390,8 +416,98 @@
 	</div>
 </section>
 <br/><br/>
+<!-- Pricing -->
+<section id="pricing">
+	<div class="parallax-pricing py-5 text-center">
+		<h1 class="wow fadeInUp text-light text-uppercase">Pricing</h1>
+		<h5 class="text-light">For Best Price and Service</h5>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="card-deck">
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Basic Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 49 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Fast Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 149 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Super Fast Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 219 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br/><br/>
+<!-- Contact -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<h5>DO YOU STILL HAVE A QUESTION REGARDING OUR SERVICES?</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+			</div>
+			<div class="offset-lg-1 col-lg-2">
+				<button class="btn btn-primary btn-lg">CONTACT US</button>
+			</div>
+		</div>
+	</div>
+</section>
+<br/><br/>
 <!-- Footer -->
-	<section id="footer">
+<section id="footer">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -456,6 +572,10 @@
   </script>
   <script>
   	$(document).ready(function() {
+  		// Page Redirect
+  		$(document).on('click','#btnRegister',function(){
+  			window.location.href = "register.html";
+  		});
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled more than 50px, adds/removes solid class
