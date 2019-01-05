@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abel|Dosis" rel="stylesheet">
     <title>TroyLogistics | Contact</title>
@@ -80,8 +81,8 @@
 	  		<div class="container" style="size: 500px;">
 	  			<div class="row">
 	  				<div class="col-sm-12 " style="color: rgba(0,0,0,0.8);">
-	  					<h1>Contact US</h1>
-	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  					<h1 class="wow fadeInUp">Contact US</h1>
+	  					<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	  					consequat.</p>					
@@ -98,13 +99,23 @@
 	<div class="row">
 		<!-- First Column -->
 		<div class="col-lg-7">
-		<h3>Send us Message</h3>
+		<h3 class="wow fadeInUp">Send us Message</h3>
 		<p class="text-justify">Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.</p>
 		<hr style="border-top: 1px solid black;">
 			<form action="">
 				<div class="form-group row">
 					<div class="col-lg-6">
-						<label class="control-label">Full Name</label>
+						<label class="control-label">First Name</label>
+						<input type="text" class="form-control" name="">
+					</div>
+					<div class="col-lg-6">
+						<label class="control-label">Last Name</label>
+						<input type="text" class="form-control" name="">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-6">
+						<label class="control-label">Contact Number</label>
 						<input type="text" class="form-control" name="">
 					</div>
 					<div class="col-lg-6">
@@ -129,7 +140,7 @@
 		</div>
 		<!-- Second Column -->
 		<div class="col-lg-5">
-			<h3>Get in touch with us</h3>
+			<h3 class="wow fadeInUp">Get in touch with us</h3>
 			<p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.<br/><br/>
 
 			Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
@@ -146,7 +157,7 @@
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Description</h5>
+					<h5 class="wow fadeInUp">Description</h5>
 					<p class="text-light text-justify">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -157,7 +168,7 @@
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
+					<h5 class="wow fadeInUp">Quick links</h5>
 					<ul class="list-unstyled quick-links">
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
 						<li><a href="#"><i class="fa fa-angle-double-right"></i>Tracking</a></li>
@@ -168,7 +179,7 @@
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Contacts</h5>
+					<h5 class="wow fadeInUp">Contacts</h5>
 					<p class="text-light">472  Shinn Street New York NY 10001</p>
 					<p class="text-light">212-792-5223</p>
 					<p class="text-light">917-851-1191</p>
@@ -203,6 +214,10 @@
 	<script src="assets/js/jquery/jquery.min.js"></script>
 	<script src="assets/js/bootstrap-js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script>
+	     new WOW().init();
+	</script>
 	<script>
   	$(document).ready(function() {
         // Transition effect for navbar 

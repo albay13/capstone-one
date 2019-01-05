@@ -115,13 +115,11 @@
 div.card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+img.imageCard{
+    border-radius: .2rem;
+}
 
 /*about*/
- #about-bg-img{
-     background: url('../images/Troy Logistics Logo-sm.png') center center no-repeat;
-     background-size: cover;
-}
  .about-text{
      background: rgba(0,0,0,0.8);
      color: white;
@@ -129,10 +127,6 @@ div.card{
 }
 
 /*services*/
- .services-text{
-     color: black;
-     padding: 1.875rem;
-}
  #services-list{
      width:100%;
 }
