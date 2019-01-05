@@ -20,7 +20,7 @@
      background-color: transparent;
      border: none;
      color: white;
-     z-index: 100;
+     z-index: 999999;
      transition: background-color 1s ease 
 }
 
@@ -109,7 +109,10 @@
  .section-content{
      padding: 5rem 0;
 }
- .card{
+.card-schedule,.card-register{
+    padding: 1rem;
+}
+.card{
      padding: 1rem;
 }
 div.card{
@@ -118,6 +121,7 @@ div.card{
 img.imageCard{
     border-radius: .2rem;
 }
+
 
 /*about*/
  .about-text{
