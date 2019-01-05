@@ -10,7 +10,7 @@
      background-color: #e0e0e0;
 }
  .navbar-brand{
-     font-size: 3rem;
+     font-size: 1.5rem;
 }
  .nav-link{
      font-size: 1.3rem;
@@ -23,6 +23,7 @@
      z-index: 100;
      transition: background-color 1s ease 
 }
+
  .navbar.solid {
      background-color: #234360;
      transition: background-color 0.3s ease 0.1s;
@@ -82,7 +83,8 @@
  #footer ul.quick-links li:hover a i {
      font-weight: 700;
 }
- @media (max-width:767px){
+/*Media Queries*/
+@media (max-width:767px){
      #footer h5 {
          padding-left: 0;
          border-left: transparent;
@@ -94,6 +96,11 @@
      #about-img{
          width: 500px;
     }
+}
+@media (max-width:988px){
+             .navbar {
+                background-color:#234360;
+            }
 }
 
  #cover-caption{

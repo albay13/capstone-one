@@ -461,13 +461,11 @@
           // checks if window is scrolled more than 50px, adds/removes solid class
           if($(this).scrollTop() > 50) { 
               $('.navbar').addClass('solid');
-              $('.navbar-brand').css("font-size","1.5rem");
               $('.navbar').addClass('navbar-dark');
               $('.navbar').removeClass('navbar-light');
               $("#logo").hide();
           } else {
               $('.navbar').removeClass('solid');
-              $('.navbar-brand').css("font-size","1.5rem");
               $('.navbar').removeClass('navbar-dark');
               $('.navbar').addClass('navbar-light');
               $("#logo").show();
