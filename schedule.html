@@ -33,29 +33,29 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-	  <a class="navbar-brand text-uppercase ml-5" href="#">Troy Logistics</a>
+	  <a class="navbar-brand text-uppercase ml-5" href="index.html">Troy Logistics</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
 	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 	    <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-	      <li class="nav-item">
+	      <li class="nav-item non-active">
 	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item non-active">
 	        <a class="nav-link" href="tracking.html">Tracking</a>
 	      </li>
 	      <li class="nav-item active">
 	        <a class="nav-link" href="schedule.html">Schedule a Pick-up</a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item non-active">
 	        <a class="nav-link" href="services.html">Services</a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item non-active">
 	        <a class="nav-link" href="about.html">About</a>
 	      </li>
-	      <li class="nav-item">
+	      <li class="nav-item non-active">
 	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
 	      <li class="nav-item mr-1">
@@ -72,17 +72,21 @@
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 	</p> -->
 </div>
-<div class="container">
+<div class="container section-header">
 	<div class="row">
-		<div class="offset-2 col-lg-8">
+		<div class="offset-lg-2 col-lg-8">
 			<div class="card text-center" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -70px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent; width: 100%">
-				<h1 class="wow fadeInUp text-uppercase">Schedule a Pick-up</h1>
-					<nav aria-label="breadcrumb">
-					  <ol class="breadcrumb">
-					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Schedule a Pick-up</li>
-					  </ol>
-					</nav>
+				<h3 class="wow fadeInUp text-uppercase" style="color:#234360;">Schedule a <span class="text-danger">Pick-up</span></h3>
+					<div class="row">
+						<div class="ffset-lg-5 mx-auto col-lg-5 col-md-5 col-sm-6">
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb" style="background-color: transparent;">
+							    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Schedule a Pick-up</li>
+							  </ol>
+							</nav>
+						</div>
+					</div>	
 			</div>
 		</div>
 	</div>
@@ -90,11 +94,11 @@
 <br/><br/>
 <div class="container">
 	<form>
-		<span class="label label-danger"><h4>Freely choose your desired date.</h4></span>
+		<span class="label label-danger"><h4><img src="assets/images/icons/main-title-icon.png"> Freely choose your desired date.</h4></span>
 		<hr style="border-top: 1px dotted black;">
 		<div class="row">
 			<div class="col-lg-6">
-				<h5>You can now schedule a pick-up via our online service. An LBC Team Member will head to your doorstep on your specified date.</h5>
+				<h5>You can now schedule a pick-up via our online service. An TroyLogistics Team Member will head to your doorstep on your specified date.</h5>
 				<div style="padding: 0;" class="card text-center mb-2">
 				    <div id="picker-no-time"></div>
 				    <input type="hidden" id="result2" value="" />
@@ -116,7 +120,7 @@
 						<option value="8">5:00 PM</option>
 					</select>
 					<p class="card-text mt-3">
-						Your LBC Agent will arrive 2-3 hours after your specified time. Please have your items ready and packed by this time to ensure a smooth pick up.
+						Your TroyLogistics Agent will arrive 2-3 hours after your specified time. Please have your items ready and packed by this time to ensure a smooth pick up.
 					</p>
 				</div>
 				<!-- Card Package -->
