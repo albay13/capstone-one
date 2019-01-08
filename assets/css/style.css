@@ -33,7 +33,7 @@
 ul.navbar-nav .nav-item.non-active:after {
             content: '';
             display: block;
-            height: 3px;
+            height: 2px;
             width: 0;
             transition: width .5s ease, background-color .5s ease;
 }
@@ -43,7 +43,7 @@ ul.navbar-nav .nav-item.non-active:after {
 }
 
 .navbar-nav .nav-item.active {
-            border-bottom: 3px solid #eb3719;
+            border-bottom: 2px solid #eb3719;
 }
 
 /*Footer*/
@@ -278,9 +278,9 @@ img.imageCard{
               margin-top: -8%;
             }
         }
-        @media (min-width:768px){
+        @media (min-width:767px){
             .hover-icon:hover{
-              margin-top: -5%;
+              margin-top: -6%;
             }
             .hover-icon:hover div.service-icon {
               background-color: white;
@@ -302,7 +302,7 @@ img.imageCard{
                 height: 100%;
             }
             #btn1,#btn2,#btn3{
-                top: 75%;
+                top: 81%;
                 position: absolute;
             }
         }
