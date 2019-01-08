@@ -24,7 +24,7 @@
 		  background-image: url("assets/images/services-banner.jpg");
 
 		  /* Set a specific height */
-		  height: 500px; 
+		  height: 350px; 
 
 		  /* Create the parallax scrolling effect */
 		  background-attachment: fixed;
@@ -103,21 +103,21 @@
 		}
 		.employees,.customer,.design,.order
 		{
-		    margin-top: 50px;
+		    margin-top: 40px;
 		    margin-bottom: 70px;
 		}
 		.counter-count
 		{
-		    font-size: 25px;
+		    font-size: 40px;
 		    background-color: transparent;
 		    border-radius: 50%;
 		    border: 3px solid #696969; 
 		    position: relative;
 		    color: #ffffff;
 		    text-align: center;
-		    line-height: 92px;
-		    width: 92px;
-		    height: 92px;
+		    line-height: 120px;
+		    width: 120px;
+		    height: 120px;
 		    -webkit-border-radius: 50%;
 		    -moz-border-radius: 50%;
 		    -ms-border-radius: 50%;
@@ -558,33 +558,33 @@
 =======
 <!-- Total Services Provided -->
 <div class="total-services py-5 text-center">
-	<div class="counter">
+	<div id="counter" class="counter">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">879</p>
+                    <p class="counter-count counter-value" data-count="879"></p>
                     <p class="employee-p">Packages</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="customer">
-                    <p class="counter-count">954</p>
+                    <p class="counter-count counter-value" data-count="954"></p>
                     <p class="customer-p">Km Per Year</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="design">
-                    <p class="counter-count">1050</p>
+                    <p class="counter-count counter-value" data-count="1050"></p>
                     <p class="design-p">Tons Of Goods</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">652</p>
+                    <p class="counter-count counter-value" data-count="652"></p>
                     <p class="order-p">Satisfied Clients</p>
                 </div>
             </div>
@@ -740,17 +740,38 @@
   </script>
   <script type="text/javascript">
   	$(document).ready(function(){
-  		$('.counter-count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 5000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+  		var a = 0;
+		$(window).scroll(function() {
+
+		  var oTop = $('#counter').offset().top - window.innerHeight;
+		  if (a == 0 && $(window).scrollTop() > oTop) {
+		    $('.counter-value').each(function() {
+		      var $this = $(this),
+		        countTo = $this.attr('data-count');
+		      $({
+		        countNum: $this.text()
+		      }).animate({
+		          countNum: countTo
+		        },
+
+		        {
+
+		          duration: 2000,
+		          easing: 'swing',
+		          step: function() {
+		            $this.text(Math.floor(this.countNum));
+		          },
+		          complete: function() {
+		            $this.text(this.countNum);
+		            //alert('finished');
+		          }
+
+		        });
+		    });
+		    a = 1;
+		  }
+
+		});
   	});
   </script>
   <script type="text/javascript">
