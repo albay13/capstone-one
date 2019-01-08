@@ -382,7 +382,19 @@ img.imageCard{
 
 
 /*index.html*/
-@media (max-width: 800px){
+        .parallax-pricing { 
+           /*The image used*/ 
+          background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/header.jpg");
+
+           /*Set a specific height*/ 
+          height: 700px; 
+
+           /*Create the parallax scrolling effect */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @media (max-width: 767px){
         .parallax-pricing{
                 background-size: auto;
                 height: auto;

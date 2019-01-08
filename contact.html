@@ -23,7 +23,7 @@
 		  background-image: url("assets/images/contact-banner.jpg");
 
 		  /* Set a specific height */
-		  height: 500px; 
+		  height: 350px; 
 
 		  /* Create the parallax scrolling effect */
 		  background-attachment: fixed;
@@ -34,10 +34,26 @@
 	     display: flex;
 	     align-items: center;
 		}
+		.map{
+			  background-image: url("assets/images/contact-map.png");
+
+			  /* Set a specific height */
+			  height: 570px; 
+
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+		}
+		
+		
+		
+
 	</style>
 
   </head>
-  <body>
+  <body style="background-color: white !important;">
 
 
 <!-- navbar -->
@@ -78,7 +94,8 @@
 	<div class="row">
 		<div class="offset-lg-2 col-lg-8">
 			<div class="card" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -70px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent; width: 100%">
-<h3 class="wow fadeInUp text-uppercase" style="color:#234360;">Contact <span class="text-danger">US</span></h3>				<div class="row">	
+					<h3 class="wow fadeInUp text-uppercase" style="color:#234360;">Contact <span class="text-danger">US</span></h3>				
+					<div class="row">	
 					<div class="offset-lg-5 mx-auto col-lg-4 col-md-5 col-sm-5">
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb" style="background-color: transparent;">
@@ -92,18 +109,38 @@
 		</div>
 	</div>
 </div>
-<br/>
-<br/>
-
+<br/><br/>
+<!-- Icons -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 text-center wow fadeInLeft">
+			<img class="img-fluid mb-3" src="assets/images/icons/email.png">
+			<!-- Icon made by Vectors Market from www.flaticon.com -->
+			<h6>pahiram.castillo@gmail.com</h6>
+			<h6>pahiram.albay@gmail.com</h6>
+		</div>
+		<div class="col-lg-4 text-center wow fadeInUp">
+			<img class="img-fluid mb-3" src="assets/images/icons/smartphone.png">
+			<!-- Icon made by https://smashicons.com/ from www.flaticon.com -->
+			<h6>833- 21- 91</h6>
+			<h6>09124 - 583- 821</h6>
+		</div>
+		<div class="col-lg-4 text-center wow fadeInRight">
+			<img class="img-fluid mb-3" src="assets/images/icons/internet.png">
+			<!-- Icon made by https://smashicons.com/ from www.flaticon.com -->
+			<h6>472 Shinn Street</h6>
+			<h6>New York NY 10001</h6>
+		</div>
+	</div>
+</div>
 <!-- Mid container -->
 <br/><br/>
 <div class="container">
 	<div class="row">
 		<!-- First Column -->
 		<div class="col-lg-7">
-		<h3 class="wow fadeInUp">Send us Message</h3>
+		<h3 class="wow fadeInUp"><img src="assets/images/icons/main-title-icon.png"> Get in <span class="text-danger">touch</span></h3>
 		<p class="text-justify">Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you.</p>
-		<hr style="border-top: 1px solid black;">
 			<form action="">
 				<div class="form-group row">
 					<div class="col-lg-6">
@@ -137,25 +174,40 @@
 						<textarea class="form-control" placeholder="Enter your message" rows="4"></textarea>
 					</div>
 				</div>
-				<button class="btn btn-danger btn-block">Submit</button>
+				<button style="border-radius: 100px;" class="btn btn-danger btn-block">Submit</button>
 			</form>
 		</div>
 		<!-- Second Column -->
 		<div class="col-lg-5">
-			<h3 class="wow fadeInUp">Get in touch with us</h3>
-			<p>Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.<br/><br/>
-
-			Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-			<p><b class="text-danger">Address :</b> di mahanap street corner </p>
-			<p><b class="text-danger">Contact : </b> (02) 123 23 45/ 09123456789 </p>
-			<p><b class="text-danger">E-Mail : </b>test-test@gmail.com</p>
+			<img src="assets/images/contact.png" class="img-fluid">
 		</div>
 	</div>
 	<br>
 </div>
-<br/>
+<br/><br/>
+<!-- Map -->
+<div class="map">
+	<div class="container">
+			<div class="row py-5">
+				<div class="offset-lg-8 col-lg-4 p-5 wow bounceInLeft" style="background-color:#0F2B45; opacity: 0.9">
+					<h5 class="text-danger  text-uppercase">Head Office</h5>
+					<p class="text-light">Green Park London</p>
+					<p class="text-light">(+1) 910-740-6026 / (+1) 910-727-2717</p>
+					<hr style="border-top: 1px solid white;">
+					<h5 class="text-danger  text-uppercase">SATELLITE OFFICE</h5>
+					<p class="text-light">Buckingham palace</p>
+					<p class="text-light">(+1) 910-740-6026 / (+1) 910-727-2717</p>
+					<hr style="border-top: 1px solid white;">
+					<h5 class="text-danger  text-uppercase">PALM SHIPPING AGENCY</h5>
+					<p class="text-light">Hyde park london</p>
+					<p class="text-light">(+1) 910-740-6026 / (+1) 910-727-2717</p>
+					<hr style="border-top: 1px solid white;">
+				</div>
+			</div>
+		</div>
+</div>		
 <!-- Footer -->
-	<section id="footer">
+<section id="footer">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
