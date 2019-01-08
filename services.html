@@ -49,6 +49,28 @@
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		}
+
+				.parallax-pricing { 
+		   /*The image used*/ 
+		  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/header.jpg");
+
+		   /*Set a specific height*/ 
+		  height: 700px; 
+
+		   /*Create the parallax scrolling effect */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		@media (max-width: 800px){
+			.parallax-pricing{
+				background-size: auto;
+				height: auto;
+				background-repeat: no-repeat;
+		  		background-size: cover;
+			}
+		}
+
 	</style>
 
   </head>
@@ -88,106 +110,154 @@
 	    </ul>
 	  </div>
 </nav>
-
-
-<!-- Parallax -->
-<section id="parallax">
-	<div class="parallax">
-	  	<div id="cover-caption">
-	  		<div class="container" style="size: 500px;">
-	  			<div class="row">
-	  				<div class="col-sm-12 " style="color: rgba(0,0,0,0.8);">
-	  					<h1 class="wow fadeInUp">Services</h1>
-	  					<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  					consequat.</p>					
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</div>
+<div class="parallax text-center"></div>
+<div class="section-header container">
+	<div class="row">
+		<div class="offset-lg-2 col-lg-8">
+			<div class="card" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -70px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent; width: 100%">
+				<h3 class="wow fadeInUp text-center text-uppercase" style="color:#234360;">Services</h3>
+				<div class="row">	
+					<div class="offset-lg-5 mx-auto col-lg-4 col-md-5 col-sm-5">
+					<nav aria-label="breadcrumb">
+					  <ol class="breadcrumb" style="background-color: transparent;">
+					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Services</li>
+					  </ol>
+					</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
+<br/><br/><br/>
+<div class="container-fluid">
+	<div class="col-lg-12">
+		<div  class="card" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -100px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent;">
+			<section id="services">
+				<div class="container mt-3	">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-xs-12 hover-icon">
+							<center>
+								<div class="service-icon wow fadeInLeft">
+									<img src="assets/images/icons/delivery-truck.png">
+									<!-- Icon made by https://www.iconfinder.com/oviyan from www.flaticon.com --> 
+								</div>
+								<h5 class="mt-2 text-bold text-uppercase">Land Transport</h5>
+								<h6>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								</h6>
+								<div class="overlay">
+									<div id="btn1" class="col-lg-12">
+								    	<button style="border-radius: 40px;" class="btn btn-success px-5">Read more</button>
+									</div>
+								</div>
+							</center>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-12 hover-icon">
+							<center>
+								<div class="service-icon wow fadeInUp">
+									<img src="assets/images/icons/cruise.png" width="50" height="50">
+									<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
+								</div>
+								<h5 class="mt-2 text-bold text-uppercase">
+									Sea Freight
+								</h5>
+								<h6>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								</h6>
+								<div class="overlay">
+									<div id="btn2" class="col-lg-12">
+								    	<button style="border-radius: 40px;" class="btn btn-success px-5 hidden-btn">Read more</button>
+									</div>
+								</div>
+							</center>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-12 hover-icon">
+							<center>
+								<div class="service-icon wow fadeInRight">
+									<img src="assets/images/icons/plane.png" width="50" height="50">
+									<!-- Icon made by monkik from www.flaticon.com --> 
+								</div>
+								<h5 class="mt-2 text-bold text-uppercase">Air Freight</h5>
+								<h6>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								</h6>
+								<div class="overlay">
+									<div id="btn3" class="col-lg-12">
+								    	<button style="border-radius: 40px;" class="btn btn-success px-5 hidden-btn">Read more</button>
+									</div>
+								</div>
+							</center>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<!-- services content -->
+<section id="services-cards">
+	<div class="section-content">
+		<div class="container py-1" style="height:auto;">
+		<h5 class="text-center text-info">Know more about US</h5>
+		<h3 class="text-center wow fadeInUp"><img src="assets/images/icons/main-title-icon.png"> WHAT WE DO</h3>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="card-columns">
+						<!-- firstCard -->
+						<div class="card wow fadeInLeft">
+							<img class="img-fluid" src="assets/images/express-mail-stamp.jpg" alt="catto">
+							<div class="card-body">
+								<h5 class="card-title" style="color:#18364A;"><img src="assets/images/icons/main-title-icon.png"><strong> Express Post</strong></h5>
+								<div class="list-group">
+								  <a href="#express_post.html#IEMS" class="list-group-item">International Express Mail Service (IEMS)</a>
+								  <a href="#express_post.html#DEMS" class="list-group-item">Domestic Express Mail Service (DEMS)</a>
+								  <a href="#express_post.html#EPouch" class="list-group-item">Express Pouch</a>
+								  <a href="express_post.html"><botton class="btn btn-outline-primary btn-sm float-right" >Read More</botton></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2ndCard -->
+						<div class="card wow fadeInUp">
+							<img class="img-fluid" src="assets/images/letter.jpeg" alt="catto">
+							<div class="card-body">
+								<h5 class="card-title" style="color:#18364A;"><img src="assets/images/icons/main-title-icon.png"><strong> Letter Post</strong></h5>
+								<div class="list-group">
+								  <a href="#letter_post.html#Letters" class="list-group-item">Letters</a>
+								  <a href="#letter_post.html#MBags" class="list-group-item">M Bags</a>
+								  <a href="#letter_post.html#PrintedMatters" class="list-group-item">Printed Matters</a>
+								  <a href="#letter_post.html#SmallPackets" class="list-group-item">Small Packets</a>
+								  <a href="letter_post.html"><botton class="btn btn-outline-primary btn-sm float-right" >Read More</botton></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- 3rdCard -->
+						<div class="card wow fadeInRight">
+							<img class="img-fluid" src="assets/images/parcel-labels.jpg" alt="catto">
+							<div class="card-body">
+								<h5 class="card-title" style="color:#18364A;"><img src="assets/images/icons/main-title-icon.png"><strong> Parcel Post</strong></h5>
+								<div class="list-group">
+								  <a href="#parcel_post.html#AirParcelPost" class="list-group-item">Air Parcel Post</a>
+								  <a href="#parcel_post.html#SurfaceParcelPost" class="list-group-item">Surface Parcel Post</a>
+								  <a href="#parcel_post.html#InsuredParcelPost" class="list-group-item">Insured Parcel Post</a>
+								  <a href="parcel_post.html"><botton class="btn btn-outline-primary btn-sm float-right" >Read More</botton></a>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 </section>
 
-
-<!-- Main container -->
-<section id="services-list">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 services-text">
-				<div class="container py-1" style="height:auto;">
-				    <div class="card  wow fadeInLeft">
-				      <div class="row ">
-				        <div class="col-xs-12 col-md-6">
-				            <img src="assets/images/express-mail-stamp.jpg" class="imageCard image-bg">
-				         </div>
-				         <div class="col-xs-12 col-md-6">
-				            <div class="card-block px-3">
-				              	<h3 class="content-txt-card wow fadeInUp">Express Post</h3>
-						        <hr style="border-top: 3px solid #0F2B45; width: 50px; margin-top: -5px;">
-								<p class="content-txt-card"><strong><a href="express_post.html#IEMS">International Express Mail Service (IEMS)</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<p class="content-txt-card"><strong><a href="express_post.html#DEMS">Domestic Express Mail Service (DEMS)</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p class="content-txt-card"><strong><a href="express_post.html#EPouch">Express Pouch</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-								<a href="express_post.html"><botton class="btn btn-outline-primary btn-sm">Read More</botton></a>
-				         	</div>
-				        </div>
-				      </div>
-				    </div>
-				</div>	
-			</div>
-		</div>
-		<hr style="border-top: 1px solid #0F2B45;">
-		<div class="row">
-			<div class="col-lg-12 services-text">
-				<div class="container py-1" style="height:auto;">
-				    <div class="card wow fadeInRight">
-				      <div class="row ">
-				        <div class="col-xs-12 col-md-6 col-md-push-6 ">
-				            <img src="assets/images/letter.jpeg" class="imageCard image-bg">
-				         </div>
-				        <div class="col-xs-12 col-md-6 col-md-pull-6 ">
-				            <div class="card-block px-3">
-				              	<h3 class="content-txt-card wow fadeInUp">Letter Post</h3>
-						        <hr style="border-top: 3px solid #0F2B45; width: 50px; margin-top: -5px;">
-								<p class="content-txt-card"><a href="letter_post.html#Letters"><strong>Letters</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<p class="content-txt-card"><a href="letter_post.html#MBags"><strong>M Bags</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p class="content-txt-card"><a href="letter_post.html#PrintedMatters"><strong>Printed Matters</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-								<p class="content-txt-card"><a href="letter_post.html#SmallPackets"><strong>Small Packets</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-								<a href="letter_post.html"><botton class="btn btn-outline-primary btn-sm">Read More</botton></a>
-				         	</div>
-				        </div>
-				      </div>
-				    </div>
-				</div>	
-			</div>
-		</div>
-		<hr style="border-top: 1px solid black;">
-		<div class="row">
-			<div class="col-lg-12 services-text">
-				<div class="container py-1" style="height:auto;">
-				    <div class="card wow fadeInLeft">
-				      <div class="row ">
-				        <div class="col-xs-12 col-md-6">
-				            <img src="assets/images/parcel-labels.jpg" class="imageCard image-bg">
-				         </div>
-				        <div class="col-xs-12 col-md-6">
-				            <div class="card-block px-3">
-				              	<h3 class="content-txt-card wow fadeInUp">Parcel Post</h3>
-						        <hr style="border-top: 3px solid #0F2B45; width: 50px; margin-top: -5px;">
-								<p class="content-txt-card"><a href="parcel_post.html#AirParcelPost"><strong>Air Parcel Post</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<p class="content-txt-card"><a href="parcel_post.html#SurfaceParcelPost"><strong>Surface Parcel Post</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p class="content-txt-card"><a href="parcel_post.html#InsuredParcelPost"><strong>Insured Parcel Post</a></strong>-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-								<a href="parcel_post.html"><botton class="btn btn-outline-primary btn-sm">Read More</botton></a>
-				         	</div>
-				        </div>
-				      </div>
-				    </div>
-				</div>	
-			</div>
-		</div>
-		<hr style="border-top: 1px solid black;">
-	</div>
-</section>
 
 <br/><br/>
 <!-- Parallax -->
@@ -209,57 +279,431 @@
 		</div>
 	</div>
 </section>
-<br><br>
 
-<!-- cards content -->
-<section id="services-cards">
-	<div class="section-content">
-		<div class="container">
-			<h1 class="display-4  wow fadeInUp">WHAT WE DO</h1>
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="card-columns">
-						<!-- firstCard -->
-						<div class="card wow fadeInLeft">
-							<img class="img-fluid" src="assets/images/services1.jpg" alt="catto">
-							<div class="card-body">
-								<h5 class="card-title">Warehousing and Packaging</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
+<section id="services-2">
+	<div class="container">
+		<div class="text-center wow fadeInUp">
+		<img src="assets/images/promise.png" width="80">
+		<h5 class="text-uppercase mt-2">We promise to deliver</h5>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-lg-12 col-md6">
+				<div class="card-deck">
+					<div class="card card-1 py-5 px-2 wow fadeInLeft">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/choices.png" width="80">
+						<!-- Icon made by http://www.freepik.com from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>Warehouse</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
 						</div>
-
-						<!-- 2ndCard -->
-						<div class="card wow fadeInUp">
-							<img class="img-fluid" src="assets/images/services2.jpg" alt="catto">
-							<div class="card-body">
-								<h5 class="card-title">Cargo Handling Services</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
+					</div>
+					<div class="card card-1 py-5 px-2 wow fadeInUp">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/call-center.png" width="80">
+						<!-- Icon made by Pause08 from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>vehicle</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
 						</div>
-
-						<!-- 3rdCard -->
-						<div class="card wow fadeInRight">
-							<img class="img-fluid" src="assets/images/services3.jpg" alt="catto">
-							<div class="card-body">
-								<h5 class="card-title">Freight Forwarding Services</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
+					</div>
+					<div class="card card-1 py-5 px-2 wow fadeInRight">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
+						<!-- Icons made by monkik from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>storage</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
 						</div>
+					</div>
+					<div class="w-100"></div>
+					<br>
+					<div class="card card-1 py-5 px-2 wow fadeInRight">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
+						<!-- Icons made by monkik from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>cargo</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
+						</div>
+					</div>
+					<div class="card card-1 py-5 px-2 wow fadeInDown">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
+						<!-- Icons made by monkik from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>logistic</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
+						</div>
+					</div>
+					<div class="card card-1 py-5 px-2 wow fadeInLeft">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
+						<!-- Icons made by monkik from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center"><strong>transport</strong></div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
 
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </section>
+<br/><br/>
 
+<br/><br/>
+<!-- Pricing -->
+<section id="pricing">
+	<div class="parallax-pricing py-5 text-center">
+		<h1 class="wow fadeInUp text-light text-uppercase">Pricing</h1>
+		<h5 class="text-light">For Best Price and Service</h5>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="card-deck">
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Basic Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 49 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Fast Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 149 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+						<div class="card card-pricing pt-3">
+							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
+								<h5 class="text-uppercase"> Super Fast Freight</h5>
+							</div>
+							<div class="card-text my-3">
+								<h1><sup>$</sup> 219 <sub>/mo.</sub></h1>
+								<hr>
+								 <p>Single Covered Truck</p>
+								<hr>
+								 <p>For Men For Transport</p>
+								<hr>
+								 <p>Insurance</p>
+								<hr>
+								<p>Additional Truck Available</p>
+							</div>
+							<div class="card-footer bg-danger" >
+								<h5 class="text-light text-uppercase">Get Started</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br/><br/>
+
+
+<!-- Remarkable Services -->
+<section id="services-2">
+	<div class="container">
+		<div class="text-center wow fadeInUp">
+		<img src="assets/images/promise.png" width="80">
+		<h5 class="text-uppercase mt-2">We promise to deliver</h5>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card-deck">
+					<div class="card py-5 px-2 wow fadeInLeft">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/choices.png" width="80">
+						<!-- Icon made by http://www.freepik.com from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center">Maximum choice</div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
+						</div>
+					</div>
+					<div class="card py-5 px-2 wow fadeInUp">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/call-center.png" width="80">
+						<!-- Icon made by Pause08 from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center">SUPERIOR CUSTOMER SERVICE</div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
+						</div>
+					</div>
+					<div class="card py-5 px-2 wow fadeInRight">
+						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
+						<!-- Icons made by monkik from www.flaticon.com -->
+						<div class="card-title text-uppercase text-center">Lowest Fare</div>
+						<div class="card-text">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br/><br/>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section-header">
+	<h5 class="text-center text-info">What Customer Say</h5>
+	<h3 class="text-center wow fadeInUp"><img src="assets/images/icons/main-title-icon.png"> Testimonials</h3>
+	<div class="container  wow fadeIn" style="background-color: rgb(15, 43, 69); opacity: 0.9;">
+		<div class="row">
+			<div class="col-sm-12">			
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Carousel indicators -->
+					<ol id="indicator" class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>   
+					<!-- Wrapper for carousel items -->
+					<div class="carousel-inner">
+						<div class="item carousel-item active">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/1.jpg" alt="">										
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>Paula Wilson</b></div>
+												<div class="details">Media Analyst / SkyNet</div>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/2.jpg" alt="">
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>Antonio Moreno</b></div>
+												<div class="details">Web Developer / SoftBee</div>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<div class="item carousel-item">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/3.jpg" alt="">										
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>Michael Holz</b></div>
+												<div class="details">Web Developer / DevCorp</div>											
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/4.jpg" alt="">										
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>Mary Saveley</b></div>
+												<div class="details">Graphic Designer / MarsMedia</div>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+						<div class="item carousel-item">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/5.jpg" alt="">										
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>Martin Sommer</b></div>
+												<div class="details">SEO Analyst / RealSearch</div>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="testimonial">
+										<p><i class="fas fa-quote-left pr-2" style="margin-left: -70px;"></i>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+									</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="/examples/images/clients/6.jpg" alt="">										
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>John Williams</b></div>
+												<div class="details">Web Designer / UniqueDesign</div>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+					</div>
+					<!-- Carousel controls -->
+					<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+						<i class="fa fa-chevron-left"></i>
+					</a>
+					<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+						<i class="fa fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br/><br/>
 <!-- Footer -->
 	<section id="footer">
 		<div class="container">
