@@ -131,6 +131,20 @@
 		    color: white;
 		    line-height: 34px;
 		}
+		.scrollup{   
+            width:64px;
+            height:64px;
+            opacity:0.7;
+            bottom:20px;
+            position:fixed;
+            right:10px;
+            text-indent:-999px;
+             /*Icon made by http://www.freepik.com from www.flaticon.com*/
+            background: url('assets/images/icons/navigation.png') no-repeat; /
+            display:none;
+            cursor:pointer;
+            z-index: 999999;
+        }
 		
 
 	</style>
@@ -172,6 +186,7 @@
 	    </ul>
 	  </div>
 </nav>
+<div class="scrollup"></div>
 <div class="parallax text-center"></div>
 <div class="section-header container">
 	<div class="row">
@@ -780,6 +795,24 @@ $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass(
 }).on('hidden.bs.collapse', function(){
 $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
 });
+  </script>
+  <script>
+  	   $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
   </script>
   </body>
 </html>

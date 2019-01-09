@@ -14,6 +14,18 @@
 		#description-container,#about{
 			  background-color: white;
 		}
+		.parallax-pricing { 
+           /*The image used*/ 
+          background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/header.jpg");
+
+           /*Set a specific height*/ 
+          height: 700px; 
+
+           /*Create the parallax scrolling effect */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
 		.parallax { 
 		  /* The image used */
 		  background-image: url("assets/images/header.jpg");
@@ -27,6 +39,21 @@
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		}
+		.scrollup{   
+            width:64px;
+            height:64px;
+            opacity:0.7;
+            bottom:20px;
+            position:fixed;
+            right:10px;
+            text-indent:-999px;
+             /*Icon made by http://www.freepik.com from www.flaticon.com*/
+            background: url('assets/images/icons/navigation.png') no-repeat; /
+            display:none;
+            cursor:pointer;
+            z-index: 999999;
+        }
+        
 	</style>
 	
 </head>
@@ -105,7 +132,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-
+<div class="scrollup"></div>
 <div class="container-fluid">
 	<div class="col-lg-12">
 		<div  class="card" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -100px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent;">
@@ -116,7 +143,7 @@
 				<center>
 					<div class="service-icon wow fadeInLeft">
 						<img src="assets/images/icons/delivery-truck.png">
-						<!-- Icon made by https://www.iconfinder.com/oviyan from www.flaticon.com --> 
+						<!-- Icon made by https://icon54.com/ from www.flaticon.com --> 
 					</div>
 					<h5 class="mt-2 text-bold text-uppercase">Land Transport</h5>
 					<h6>
@@ -132,7 +159,7 @@
 			<div class="col-lg-4 col-md-4 col-xs-12 hover-icon">
 				<center>
 					<div class="service-icon wow fadeInUp">
-						<img src="assets/images/icons/cruise.png" width="50" height="50">
+						<img src="assets/images/icons/ship.png" width="50" height="50">
 						<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 					</div>
 					<h5 class="mt-2 text-bold text-uppercase">
@@ -265,7 +292,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="card-deck">
-					<div class="card py-5 px-2 wow fadeInLeft">
+					<div class="card py-5 px-2 wow fadeInUp">
 						<img class="mx-auto d-block mb-2" src="assets/images/icons/choices.png" width="80">
 						<!-- Icon made by http://www.freepik.com from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center">Maximum choice</div>
@@ -291,7 +318,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card py-5 px-2 wow fadeInRight">
+					<div class="card py-5 px-2 wow fadeInUp">
 						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
 						<!-- Icons made by monkik from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center">Lowest Fare</div>
@@ -617,5 +644,24 @@
         });
 	});
   </script>
+  <script>
+  	   $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
+  </script>
+
 </body>
 </html>
