@@ -118,7 +118,7 @@ ul.navbar-nav .nav-item.non-active:after {
 }
 
 /*about troy-logo*/
- @media (max-width: 1199px) {
+ @media (max-width: 767px) {
      #about-img-2{
         width: 124px;
         height: : 124px;
@@ -127,6 +127,18 @@ ul.navbar-nav .nav-item.non-active:after {
         display: block;
     }
 }
+
+/*contact image man/box*/
+/* @media (max-width: 767px) {
+     #about-img-3{
+        width: 256px;
+        height: : 256px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}*/
+
 @media (max-width:988px){
      .navbar {
         background-color:#234360;
@@ -1128,7 +1140,7 @@ img.imageCard{
 /*end accordion*/
 
 /*about displayimage:none */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
 .about-img-1 {
         width: 100%;
   }
@@ -1144,19 +1156,3 @@ img.imageCard{
   margin-right: auto;
   }
 
-/*about displayimage:none */
-@media screen and (max-width: 705px) {
-.about-img-2 {
-        width: 100%;
-  }
-.about-img-2 img {
-    display: none;
-  }
-
-.img img {
-    width: 64px;
-    height: 64px;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
