@@ -8,7 +8,7 @@
             showTime: true,
             locale: 'en',
             positionShift: { top: 20, left: 0},
-            title: "Select Date and Time",
+            title: "Select Date",
             buttonTitle: "Select"
         }, options);
         moment.locale(settings.locale);
