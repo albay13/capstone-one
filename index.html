@@ -14,6 +14,7 @@
 		#description-container,#about{
 			  background-color: white;
 		}
+
 		.parallax-pricing { 
            /*The image used*/ 
           background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/header.jpg");
@@ -25,6 +26,14 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+        }
+         @media (max-width: 767px){
+        .parallax-pricing{
+                background-size: auto;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
 		.parallax { 
 		  /* The image used */
@@ -64,7 +73,7 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
-	  <a class="navbar-brand text-uppercase ml-5" href="index.html"><b>Troy Logistics</b></a>
+	  <a class="navbar-brand text-uppercase ml-5" href="index.html"><b>Troy <span class="text-danger">Logistics</span></b></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -103,10 +112,10 @@
     <div class="carousel-item active">
       <img src="assets/images/img3.jpg" alt="Los Angeles" width="1400" height="610">
 	    <div class="carousel-caption">
-	        <h1>Troy <span style="color: #234360;">Logistics</span></h1>
+	        <h1>Troy <span class="text-danger">Logistics</span></h1>
 	        <h3>Get start your next awesome project</h3>
-	        <button class="btn btn-danger btn-lg text-uppercase" role="button">Get Started</button> 
-	        <button class="btn btn-danger btn-lg text-uppercase" role="button">Read more</button> 
+	        <a href="schedule.html" class="btn btn-danger btn-lg text-uppercase" role="button">Get Started</a> 
+	        <a href="about.html" class="btn btn-danger btn-lg text-uppercase" role="button">Read more</a> 
 	    </div> 
 	   
     </div>
@@ -115,7 +124,7 @@
 	       <div class="carousel-caption">
 	        <h1>Containers</h1>
 	        <h3>Thousand of Containers</h3>
-	        <button class="btn btn-danger btn-lg" role="button">See all features</button>
+	        <a href="services.html" class="btn btn-danger btn-lg" role="button">See all features</a>
 	      </div>  
     </div>
     <div class="carousel-item">
@@ -123,7 +132,7 @@
 	       <div class="carousel-caption">
 	        <h1>Secured Storage</h1>
 	        <h3>Fully Air-conditioned storage</h3>
-	        <button class="btn btn-danger btn-lg text-uppercase" role="button">Read more</button>
+	        <a href="services.html" class="btn btn-danger btn-lg text-uppercase" role="button">Read more</a>
 	       </div>  
     </div>
   </div>
@@ -227,7 +236,7 @@
 		  	<div class="row">
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img class="wow fadeInUp" src="assets/images/description/delivery.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery.png" alt="Cart" width="140" height="140" data-wow-duration=".50s" data-wow-delay=".20s">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -240,7 +249,7 @@
 		  		</div>
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img class="wow fadeInUp" src="assets/images/description/distribution.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/distribution.png" alt="Cart" width="140" height="140" data-wow-duration=".50s" data-wow-delay=".20s">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -256,7 +265,7 @@
 		  	<div class="row mt-5">
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img class="wow fadeInUp" src="assets/images/description/delivery-truck.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery-truck.png" alt="Cart" width="140" height="140" data-wow-duration=".50s" data-wow-delay=".30s">
 		  			<!-- Icon made by Icongeek26 from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -269,7 +278,7 @@
 		  		</div>
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img class="wow fadeInUp" src="assets/images/description/delivery-man.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery-man.png" alt="Cart" width="140" height="140 " data-wow-duration=".50s" data-wow-delay=".30s">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -296,7 +305,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="card-deck">
-					<div class="card py-5 px-2 wow fadeInUp">
+					<div class="card py-5 px-2 wow fadeInLeft" data-wow-duration=".50s" data-wow-delay=".20s">
 						<img class="mx-auto d-block mb-2" src="assets/images/icons/choices.png" width="80">
 						<!-- Icon made by http://www.freepik.com from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center">Maximum choice</div>
@@ -309,7 +318,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card py-5 px-2 wow fadeInUp">
+					<div class="card py-5 px-2 wow fadeInLeft" data-wow-duration=".50s" data-wow-delay=".30s">
 						<img class="mx-auto d-block mb-2" src="assets/images/icons/call-center.png" width="80">
 						<!-- Icon made by Pause08 from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center">SUPERIOR CUSTOMER SERVICE</div>
@@ -322,7 +331,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card py-5 px-2 wow fadeInUp">
+					<div class="card py-5 px-2 wow fadeInLeft" data-wow-duration=".50s" data-wow-delay=".40s">
 						<img class="mx-auto d-block mb-2" src="assets/images/icons/bank.png" width="80">
 						<!-- Icons made by monkik from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center">Lowest Fare</div>
@@ -354,7 +363,7 @@
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat.
 					</p>
-					<button class="btn btn-outline-light btn-block">Read more</button>
+					<a href="services.html" class="btn btn-outline-light btn-block">Read more</a>
 				</div>
 			</div>
 		</div>
@@ -440,8 +449,8 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-				<button class="btn btn-outline-info text-uppercase mr-4">Read More</button>
-				<button class="btn btn-outline-success text-uppercase">get started</button>
+				<a href="services.html" class="btn btn-outline-info text-uppercase mr-4">Read More</a>
+				<a href="schedule.html" class="btn btn-outline-success text-uppercase">get started</a>
 			</div>
 		</div>
 	</div>
@@ -454,16 +463,16 @@
 		<h3 class="text-center"><img src="assets/images/icons/main-title-icon.png"> Partner Company</h3>
 		<br/><br/>
 		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".20s">
 				<img src="assets/images/apple.png" width="100">
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".30s">
 				<img src="assets/images/google.png" width="100">
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".50s">
 				<img src="assets/images/paypal.png" width="100">
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".60s">
 				<img src="assets/images/american_express.png" width="100">
 			</div>
 		</div>
@@ -480,7 +489,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="card-deck">
-						<div class="card card-pricing pt-3">
+						<div class="card card-pricing pt-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".20s">
 							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
 								<h5 class="text-uppercase"> Basic Freight</h5>
 							</div>
@@ -499,7 +508,7 @@
 								<h5 class="text-light text-uppercase">Get Started</h5>
 							</div>
 						</div>
-						<div class="card card-pricing pt-3">
+						<div class="card card-pricing pt-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".30s">
 							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
 								<h5 class="text-uppercase"> Fast Freight</h5>
 							</div>
@@ -518,7 +527,7 @@
 								<h5 class="text-light text-uppercase">Get Started</h5>
 							</div>
 						</div>
-						<div class="card card-pricing pt-3">
+						<div class="card card-pricing pt-3 wow fadeInUp" data-wow-duration=".50s" data-wow-delay=".40s">
 							<div class="card-header mb-sm-5 mb-md-5 mb-lg-0">
 								<h5 class="text-uppercase"> Super Fast Freight</h5>
 							</div>
@@ -554,7 +563,7 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
 			</div>
 			<div class="offset-lg-1 col-lg-2">
-				<button class="btn btn-primary btn-lg">CONTACT US</button>
+				<a href="contact.html" class="btn btn-primary btn-lg">CONTACT US</a>
 			</div>
 		</div>
 	</div>

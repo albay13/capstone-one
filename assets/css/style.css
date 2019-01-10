@@ -409,14 +409,7 @@ img.imageCard{
 }
 
 /*index.html*/
-        @media (max-width: 767px){
-        .parallax-pricing{
-                background-size: auto;
-                height: auto;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
+       
         .service-icon{
             background-color: rgba(52, 203, 255, 0.2);
             width: 90px;
