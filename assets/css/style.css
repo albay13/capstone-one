@@ -128,16 +128,6 @@ ul.navbar-nav .nav-item.non-active:after {
     }
 }
 
-/*contact image man/box*/
-/* @media (max-width: 767px) {
-     #about-img-3{
-        width: 256px;
-        height: : 256px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-}*/
 
 @media (max-width:988px){
      .navbar {
@@ -1111,7 +1101,7 @@ img.imageCard{
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -1127,15 +1117,15 @@ img.imageCard{
 }
 
 .panel-default>.panel-heading a[aria-expanded="true"]:after {
-  content: "\2212";
+  content: "\f107";
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .panel-default>.panel-heading a[aria-expanded="false"]:after {
-  content: "\002b";
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  content: "\f106";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 /*end accordion*/
 
@@ -1155,4 +1145,31 @@ img.imageCard{
   margin-left: auto;
   margin-right: auto;
   }
+}
 
+/*services more about us, how we work */
+@media (min-width: 768px) {
+    .card-columns-hww {
+        column-count: 2;
+    }
+}
+@media (min-width: 992px) {
+    .card-columns-hhw {
+        column-count: 3;
+    }
+}
+
+/*services more about us,-what we offer*/
+@media (min-width: 768px) {
+    .card-columns-wwo {
+        column-count: 2;
+    }
+}
+@media (min-width: 992px) {
+    .card-columns-wwo {
+        column-count: 3;
+    }
+}
+
+
+        
