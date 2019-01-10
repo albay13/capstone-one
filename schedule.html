@@ -310,19 +310,16 @@
   	<script src="assets/js/bootstrap-js/bootstrap.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
- 	<script>
-	     new WOW().init();
-  	</script>
-  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+ 	<script src="assets/js/project.js"></script>
   	<script src="assets/pgn-calendar/dist/js/pignose.calendar.min.js"></script>
-  	<script>
-  		$(document).ready(function(){
-  			$('input.calendar').pignoseCalendar({
-				format: 'YYYY/MM/DD', // date format string. (2017-02-02)
-				theme: 'dark', // Dark theme
-				minDate: new Date()
-			});
-  		});
+  	<script type="text/javascript">
+  		 //Pignose Calendar
+        $('input.calendar').pignoseCalendar({
+          format: 'YYYY/MM/DD', // date format string. (2017-02-02)
+          theme: 'dark', // Dark theme
+          minDate: new Date()
+        });
   	</script>
   	<!-- Old Date Picker -->
 	<!-- <script type="text/javascript" src="assets/js/datetimepicker.js"></script> -->	
@@ -331,43 +328,5 @@
 	        $('#picker-no-time').dateTimePicker({ showTime: false, dateFormat: 'DD/MM/YYYY'});
 	    })
 	</script> -->
- 	<script>
-	  	$(document).ready(function() {
-	        // Transition effect for navbar 
-	        $(window).scroll(function() {
-	          // checks if window is scrolled more than 50px, adds/removes solid class
-	          if($(this).scrollTop() > 50) { 
-	              $('.navbar').addClass('solid');
-	              $('.navbar').addClass('navbar-dark');
-	              $('.navbar').removeClass('navbar-light');
-	              $("#logo").hide();
-	          } else {
-	              $('.navbar').removeClass('solid');
-	              $('.navbar').removeClass('navbar-dark');
-	              $('.navbar').addClass('navbar-light');
-	              $("#logo").show();
-	          }
-	        });
-		});
-  	</script>
-  	<script>
-  		$(document).ready(function(){
-  			// Page Redirect
-	  		$(document).on('click','#btnRegister',function(){
-	  			window.location.href = "register.html";
-	  		});
-  			$("#card-package").hide();
-  			$("#card-documents").hide();
-  			$(document).on('click','#btn_send_package',function(){
-  				$("#card-package").fadeIn(500);
-  				$("#btn_send_package").hide();
-  			});
-  			$(document).on('click','#btn_send_documents',function(){
-  				$("#card-documents").fadeIn(500);
-  				$("#btn_send_documents").hide();
-  			});
-  		});
-  	</script>
-  
 </body>
 </html>

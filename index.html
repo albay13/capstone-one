@@ -53,9 +53,6 @@
             cursor:pointer;
             z-index: 999999;
         }
-        .rounded-btn{
-        	border-radius: 40px;
-        }
         .rounded-btn:hover{
         	border-radius: 0;
         	transition: all 0.5s ease 0s;
@@ -177,7 +174,7 @@
 					</h6>
 					<div class="overlay">
 						<div id="btn2" class="col-lg-12">
-					    	<button style="border-radius: 40px;" class="btn btn-success px-5 hidden-btn">Read more</button>
+					    	<button class="btn btn-success px-5 rounded-btn hidden-btn">Read more</button>
 						</div>
 					</div>
 				</center>
@@ -194,7 +191,7 @@
 					</h6>
 					<div class="overlay">
 						<div id="btn3" class="col-lg-12">
-					    	<button style="border-radius: 40px;" class="btn btn-success px-5 hidden-btn">Read more</button>
+					    	<button class="btn btn-success px-5 rounded-btn hidden-btn">Read more</button>
 						</div>
 					</div>
 				</center>
@@ -230,7 +227,7 @@
 		  	<div class="row">
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img src="assets/images/description/delivery.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery.png" alt="Cart" width="140" height="140">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -243,7 +240,7 @@
 		  		</div>
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img src="assets/images/description/distribution.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/distribution.png" alt="Cart" width="140" height="140">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -259,7 +256,7 @@
 		  	<div class="row mt-5">
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img src="assets/images/description/delivery-truck.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery-truck.png" alt="Cart" width="140" height="140">
 		  			<!-- Icon made by Icongeek26 from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -272,7 +269,7 @@
 		  		</div>
 		  		<div class="col-lg-3">
 		  			<center>
-		  			<img src="assets/images/description/delivery-man.png" alt="Cart" width="140" height="140">
+		  			<img class="wow fadeInUp" src="assets/images/description/delivery-man.png" alt="Cart" width="140" height="140">
 		  			<!-- Icon made by http://www.freepik.com from www.flaticon.com --> 
 		  			</center>
 		  		</div>
@@ -457,16 +454,16 @@
 		<h3 class="text-center"><img src="assets/images/icons/main-title-icon.png"> Partner Company</h3>
 		<br/><br/>
 		<div class="row">
-			<div class="col-lg-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
 				<img src="assets/images/apple.png" width="100">
 			</div>
-			<div class="col-lg-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
 				<img src="assets/images/google.png" width="100">
 			</div>
-			<div class="col-lg-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
 				<img src="assets/images/paypal.png" width="100">
 			</div>
-			<div class="col-lg-3 wow fadeInUp">
+			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp">
 				<img src="assets/images/american_express.png" width="100">
 			</div>
 		</div>
@@ -625,50 +622,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script src="assets/js/testimonial.js"></script>
-  <script>
-	     new WOW().init();
-  </script>
-  <script>
-  	$(document).ready(function() {
-  		// Page Redirect
-  		$(document).on('click','#btnRegister',function(){
-  			window.location.href = "register.html";
-  		});
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 50px, adds/removes solid class
-          if($(this).scrollTop() > 50) { 
-              $('.navbar').addClass('solid');
-              $('.navbar').addClass('navbar-dark');
-              $('.navbar').removeClass('navbar-light');
-              $("#logo").hide();
-          } else {
-              $('.navbar').removeClass('solid');
-              $('.navbar').removeClass('navbar-dark');
-              $('.navbar').addClass('navbar-light');
-              $("#logo").show();
-          }
-        });
-	});
-  </script>
-  <script>
-  	   $(document).ready(function(){ 
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        }); 
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
-    });
-  </script>
-
+  <script src="assets/js/project.js"></script>
 </body>
 </html>
