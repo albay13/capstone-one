@@ -4,13 +4,11 @@
 }
  html,body{
      height: 100%;
-     font-family: 'Dosis', sans-serif;
-     min-width: 320px; 
-     max-width: 1920px;
+     font-family: 'Dosis', sans-serif 
 }
  body{
      background-color: #e0e0e0;
-}   
+}
 
 /*Navbar*/
  .navbar-brand{
@@ -1168,5 +1166,6 @@ img.imageCard{
         column-count: 3;
     }
 }
+
 
         
