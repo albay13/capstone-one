@@ -46,7 +46,53 @@ ul.navbar-nav .nav-item.non-active:after {
 .navbar-nav .nav-item.active {
             border-bottom: 2px solid #eb3719;
 }
-
+.navbar-toggler{
+    border-color:transparent !important;
+}
+/*Navbar Media Query*/
+@media (max-width: 302px) and (min-width:292px){
+            .navbar-brand{
+                font-size: 1.4rem;
+            }
+        }
+        @media(max-width: 291px) and (min-width: 282px){
+            .navbar-brand{
+                font-size: 1.3rem;
+            }
+        }
+        @media(max-width: 281px) and (min-width: 272px){
+            .navbar-brand{
+                font-size: 1.2rem;
+            }
+            .navbar-toggler{
+                font-size: 16px;
+            }
+        }
+        @media(max-width: 271px) and (min-width: 262px){
+            .navbar-brand{
+                font-size: 1.1rem;
+            }
+            .navbar-toggler{
+                font-size: 15px;
+            }
+        
+        }
+        @media(max-width: 261px) and (min-width: 253px){
+            .navbar-brand{
+                font-size: 1rem;
+            }
+            .navbar-toggler{
+                font-size: 12px;
+            }
+        }
+         @media(max-width: 252px) and (min-width: 210px){
+            .navbar-brand{
+                font-size: 0.675rem;
+            }
+            .navbar-toggler{
+                font-size: 10px;
+            }
+        }
 /*Footer*/
  #footer {
      background: #234360 !important;
