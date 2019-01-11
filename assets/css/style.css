@@ -154,7 +154,16 @@ img.imageCard{
     border-radius: .2rem;
 }
 
-
+.page-indicator{
+    border-top-right-radius:15px;
+    border-top-left-radius: 15px;
+    margin-top: -70px; 
+    z-index: 9999;
+    box-shadow: none !important;
+    background-color: white; 
+    border-color: transparent; 
+    width: 100%
+}
 /*about*/
  .about-text{
      background: rgba(0,0,0,0.8);
@@ -178,7 +187,6 @@ img.imageCard{
     display: block;
     width: 120px;
     height: 1px;
-    background: #ddd;
     bottom: 1px;
     left: calc(50% - 60px);
 }

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Dosis" rel="stylesheet">
 <!-- accordion angle-down/up font awesome link -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="assets/images/logo2.png">
     <title>TroyLogistics | Services</title>
 
 	<style type="text/css">
@@ -39,17 +39,26 @@
 
 		.parallax-2 { 
 		  /* The image used */
-		  background-image: url("assets/images/services-banner3.jpg");
+		  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/services-banner3.jpg");
 
 		  /* Set a specific height */
-		  height: 500px; 
+		  height: 350px; 
 
 		  /* Create the parallax scrolling effect */
 		  background-attachment: fixed;
 		  background-position: center;
 		  background-repeat: no-repeat;
 		  background-size: cover;
+		  padding-top: 5%;
 		}
+		 @media (max-width: 767px){
+        .parallax-2{
+                background-size: auto;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
 
 				.parallax-pricing { 
 		   /*The image used*/ 
@@ -181,9 +190,9 @@
 	      <li class="nav-item non-active">
 	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
-	      <li class="nav-item mr-1">
+	     <!--  <li class="nav-item mr-1">
 	      	 <button id="btnRegister" class="btn btn-danger my-2 my-sm-2 my-lg-0 text-uppercase" type="submit">Register</button>
-	      </li>
+	      </li> -->
 	    </ul>
 	  </div>
 </nav>
@@ -192,7 +201,7 @@
 <div class="section-header container">
 	<div class="row">
 		<div class="offset-lg-2 col-lg-8">
-			<div class="card" style="border-top-right-radius:15px;border-top-left-radius: 15px;margin-top: -70px; z-index: 9999;box-shadow: none;background-color: white; border-color: transparent; width: 100%">
+			<div class="card page-indicator">
 				<h3 class="wow fadeInUp text-center text-uppercase" style="color:#234360;">Services</h3>
 				<div class="row">	
 					<div class="offset-lg-5 mx-auto col-lg-4 col-md-5 col-sm-5">
@@ -208,157 +217,58 @@
 		</div>
 	</div>
 </div>
-<!-- services content -->
-<section id="services-cards" class="section-header">
+<!-- cards content -->
+<section id="services-cards">
 	<div class="section-content">
-		<div class="container py-1" style="height:auto;">
-		<h5 class="text-center text-info">Know more about US</h5>
-		<h3 class="text-center wow fadeInUp"><img src="assets/images/icons/main-title-icon.png"> WHAT WE DO</h3>
+		<div class="container section-header">
+			<h5 class="text-center text-info">Know more about US</h5>
+			<h3 class="text-center text-uppercase mb-3 wow fadeInUp"><img src="assets/images/icons/main-title-icon.png"> What we do</h3>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
 			<div class="row">
+<!-- 				<div class="col-lg-12">
+					<div class="card-columns card-columns-WWD"> -->
 						<!-- firstCard -->
-						<div class="col-lg-4 col-md-12 mb-md-3 col-sm-12 mb-sm-3">
+						<div class="col-lg-4">
 							<div class="card wow fadeInLeft">
-								<h5 class="card-title text-center" style="color:#18364A;"><strong> Express Post</strong></h5>
-								<img class="img-fluid img-thumbnail"  src="assets/images/express-mail-stamp.jpg" alt="catto">
-								<div class="card-body" style="padding: 0;">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									    <div class="panel panel-default">
-										    <div class="panel-heading" role="tab" id="headingOne">
-										        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-										          International Express Mail Service</a>
-										    </div>
-										    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify"><strong>International Express Mail Service (IEMS)</strong> is the fastest means of sending time-sensitive items to addresses abroad. Any articles such as documents, samples of merchandise and goods, not specifically prohibited by regulations, can be sent via IEMS. Currently, the Philippines has a bilateral agreement with 45 countries for the reciprocal exchange of EMS items.</p>
-										        </div>
-										    </div>
-									    </div>
-									    <div class="panel panel-default">
-										    <div class="panel-heading" role="tab" id="headingTwo">
-										        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										          Domestic Express Mail Service</a>
-									    	</div>
-										    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify"><strong>Domestic Express Mail Service (DEMS)</strong> is the fastest means of sending urgent messages, business documents or goods to addresses within the Philippines. Generally, DEMS items are delivered the next day after the date of mailing provided that they are posted on or before the prescribed cut-off time. Currently, the service is available in all major cities and towns nationwide.</p>
-										        </div>
-										    </div>
-									    </div>
-									    <div class="panel panel-default">
-										    <div class="panel-heading" role="tab" id="headingThree">
-										        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										          Express Pouch</a>
-										    </div>
-									    	<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify"><strong>Express Pouch</strong> is a next day delivery guaranteed to time-sensitive and important documents. It is a guaranteed next-day door-to-door delivery to selected areas either by land or air.</p>
-										        </div>
-									    	</div>
-									    </div>
-									</div>
+								<img class="img-fluid" src="assets/images/services1.jpg" alt="catto">
+								<div class="card-body">
+									<h5 class="card-title">Warehousing and Packaging</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.</p>
 								</div>
 							</div>
 						</div>
 						<!-- 2ndCard -->
-						<div class="col-lg-4 col-md-12 mb-md-3 col-sm-12 mb-sm-3">
-							<div class="card wow fadeInUp">
-								<h5 class="card-title text-center" style="color:#18364A;"><strong> Letter Post</strong></h5>
-								<img class="img-fluid img-thumbnail" src="assets/images/letter_post-banner.jpg" alt="catto">
-								<div class="card-body" style="padding: 0;">
-										  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										    <div class="panel panel-default">
-										      <div class="panel-heading" role="tab" id="headingOne1">
-										        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-										          Letters</a>
-										      </div>
-										      <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne1">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify"><strong>Letters</strong> are first class mails which are either ordinary, priority or registered</p>
-													<ul>
-														<li><strong>Ordinary Mail</strong> includes all unrecorded items which are charged the basic postage and delivered through the regular delivery channels. Mails are classified into first, second and third class.</li>
-														<li><strong>Priority Mail</strong> is a next-day delivery of unrecorded mails in Metro Manila and selected cities and towns nationwide if posted on or before 3:00PM.</li>
-														<li><strong>Registered Mail</strong> is accorded mail security with the entire process being recorded from acceptance to delivery to the addressee. As proof of delivery, the sender may attach a registry return receipt to be signed by the recipient. Indemnity is paid in case of loss or damage of registered mail.</li>
-													</ul>
-										        </div>
-										      </div>
-										    </div>
-										    <div class="panel panel-default">
-										      <div class="panel-heading" role="tab" id="headingTwo2">
-										        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-										          Printed Matters</a>
-										      </div>
-										      <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify">Articles that meet the definition of <strong>Printed Matters</strong> include newspapers, magazines, journals, books, sheet music, catalogs, directories, commercial advertising, promotional matter, and the likes.</p>
-										        </div>
-										      </div>
-										    </div>
-										    <div class="panel panel-default">
-										      <div class="panel-heading" role="tab" id="headingThree3">
-										        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-										          Small Packets</a>
-										      </div>
-										      <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
-										        <div class="panel-body col-lg-12">
-										          <p class="content-txt-card text-justify"><strong>Small Packets</strong> are specially provided for the transmission of goods (including trade samples), whether dutiable or not, in the same mail as Printed Papers, with a limit of two (2) kilograms and below.</p>
-										        </div>
-										      </div>
-										    </div>
-										  </div>
-								</div>
-							</div>
-						</div>
-						<!-- 3rdCard -->
-						<div class="col-lg-4 col-md-12 mb-md-3 col-sm-12 mb-sm-3">
-						<div class="card wow fadeInRight">
-							<h5 class="card-title text-center" style="color:#18364A;"><strong> Parcel Post</strong></h5>
-							<img class="img-fluid img-thumbnail" src="assets/images/parcel-labels.jpg" alt="catto">
-							<div class="card-body" style="padding: 0;">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								    <div class="panel panel-default">
-								      <div class="panel-heading" role="tab" id="headingOne4">
-								        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
-								          Air Parcel Post</a>
-								      </div>
-								      <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne4">
-								        <div class="panel-body col-lg-12">
-								          <p class="content-txt-card text-justify"><strong>Air Parcel Post</strong> is the fastest means of sending parcels to foreign countries. This service is available only in countries with which the Philippines has bilateral agreements.</p>
-								        </div>
-								      </div>
-								    </div>
-								    <div class="panel panel-default">
-								      <div class="panel-heading" role="tab" id="headingTwo5">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
-								          Surface Parcel Post</a>
-								      </div>
-								      <div id="collapseTwo5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo5">
-								        <div class="panel-body col-lg-12">
-								          <p class="content-txt-card text-justify"><strong>Surface Parcel Post</strong> is the cheapest means of sending parcels to foreign countries with which the Philippines has bilateral agreements. Surface parcels may be sent to countries where we have no bilateral agreements only through the intermediary of the United States of America.</p>
-								        </div>
-								      </div>
-								    </div>
-								    <div class="panel panel-default">
-								      <div class="panel-heading" role="tab" id="headingThree6">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
-								          Insured Parcel Post</a>
-								      </div>
-								      <div id="collapseThree6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree6">
-								        <div class="panel-body col-lg-12">
-								          <p class="content-txt-card text-justify"><strong>Insured Parcel Post</strong> includes parcels with a maximum insured value of PhP 5,000.00 which may be accepted for delivery in selected foreign countries. At present, this service is available only to Switzerland and the United States of America and its possessions.</p>
-								        </div>
-								      </div>
-								    </div>
-								  </div>
+						<div class="col-lg-4">
+						<div class="card wow fadeInUp">
+							<img class="img-fluid" src="assets/images/services2.jpg" alt="catto">
+							<div class="card-body">
+								<h5 class="card-title">Cargo Handling Services</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
 						</div>
 					</div>
+						<!-- 3rdCard -->
+						<div class="col-lg-4">
+						<div class="card wow fadeInRight">
+							<img class="img-fluid" src="assets/images/services3.jpg" alt="catto">
+							<div class="card-body">
+								<h5 class="card-title">Freight Forwarding Services</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<!-- </div>
+				</div> -->
 			</div>
 		</div>
 	</div>	
 </section>
-<!--  -->
 <section id="description">
 	<div id="description-container" class="p-4">
 		<div class="container section-header">
@@ -374,7 +284,7 @@
 		  <!-- First Row Description -->
 		  	<div class="row">
 		  		<div class="col-lg-3 col-md-6 col-sm-12 mb-lg-3 mb-md-3 mb-sm-3 mb-xs-3">
-					<div class="card card-1 card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".20s">
+					<div style="box-shadow: none;" class="card card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".20s">
 						<img class="mx-auto d-block mb-2" src="assets/images/How-we-Work-1.png" width="100" height="80">
 						<!-- Icon made by http://www.freepik.com from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center"><strong>01. Book Us</strong></div>
@@ -386,7 +296,7 @@
 					</div>
 		  		</div>
 		  		<div class="col-lg-3 col-md-6 col-sm-12 mb-lg-3 mb-md-3 mb-sm-3 mb-xs-3">
-					<div class="card card-1 card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".30s">
+					<div style="box-shadow: none;" class="card card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".30s">
 						<img class="mx-auto d-block mb-2" src="assets/images/How-we-Work-2.png" width="100" height="80">
 						<!-- Icon made by Pause08 from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center"><strong>02. We Pack your Goods</strong></div>
@@ -398,7 +308,7 @@
 					</div>
 		  		</div>
 		  		<div class="col-lg-3 col-md-6 col-sm-12 mb-lg-3 mb-md-3 mb-sm-3 mb-xs-3">
-					<div class="card card-1 card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".40s">
+					<div style="box-shadow: none;" class="card card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".40s">
 						<img class="mx-auto d-block mb-2" src="assets/images/How-we-Work-3.png" width="100" height="80">
 						<!-- Icons made by monkik from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center"><strong>03. We Move your Goods</strong></div>
@@ -410,7 +320,7 @@
 					</div>
 		  		</div>
 		  		<div class="col-lg-3 col-md-6 col-sm-12 mb-lg-3 mb-md-3 mb-sm-3 mb-xs-3">
-					<div class="card card-1 card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".50s">
+					<div style="box-shadow: none;" class="card card-columns-hww wow fadeInLeft"data-wow-duration=".50s" data-wow-delay=".50s">
 						<img class="mx-auto d-block mb-2" src="assets/images/How-we-Work-4.png" width="100" height="80">
 						<!-- Icons made by monkik from www.flaticon.com -->
 						<div class="card-title text-uppercase text-center"><strong>04. We Deliver</strong></div>
@@ -425,22 +335,19 @@
 		</div>
 	</div>
 </section>
-<br/><br/>
-
 <!-- Parallax -->
 <section id="parallax">
 	<div class="parallax-2">
-		<div class="container">
+		<div class="container ">
 			<div class="row py-5">
-				<div class="col-lg-4 p-5 wow bounceInLeft" style="background-color:#0F2B45; opacity: 0.9">
-					<h1 class="text-light text-center">Services</h1>
-					<p class="text-light text-justify">
+				<div class="col-lg-12 text-center">
+					<h1 class="text-light display-4">Transport Solutions For Containers & General Cargo</h1>
+					<p class="lead text-light">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat.
 					</p>
-					<button class="btn btn-outline-light btn-block">Read more</button>
 				</div>
 			</div>
 		</div>
