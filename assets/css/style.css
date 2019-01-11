@@ -1175,5 +1175,18 @@ img.imageCard{
     }
 }
 
+/*parallax text inside image*/
+.parallax-about {
+    background-image: url("assets/images/about-banner.jpg");
+  line-height: 300px;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+}
+.parallax-about p {
+  color: white;
+  display: inline-block;
+  background-color: rgba(0,0,0,.6);
+}
 
         
