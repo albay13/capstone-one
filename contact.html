@@ -29,10 +29,17 @@
 		  background-attachment: fixed;
 		  background-position: center;
 		  background-repeat: no-repeat;
-	     background-size: cover;
+	     background-size: contain;
 	     display: flex;
 	     align-items: center;
 		}
+
+		@media (min-width: 992px) {
+		    .parallax {
+		        background-size: contain;
+		    }
+		}
+		
 		.map{
 			  background-image: url("assets/images/contact-map.png");
 
@@ -116,7 +123,7 @@
 	    </ul>
 	  </div>
 </nav>
-<div class="parallax text-center"></div>
+<div class="parallax text-center contact-parallax"></div>
 <div class="section-header container">
 	<div class="row">
 		<div class="offset-lg-2 col-lg-8">
