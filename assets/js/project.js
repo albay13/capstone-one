@@ -49,3 +49,27 @@
         }).on('hidden.bs.collapse', function(){
         $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
         });
+        //Read more and Read Lss
+        $(function(){
+        // here the code for text minimiser and maxmiser by faisal khan
+        var minimized_elements = $('p.text-viewer');
+        minimized_elements.each(function(){    
+            var t = $(this).text();        
+            if(t.length < 60) return;
+            
+            $(this).html(
+                t.slice(0,60)+'<span>... </span><a href="#" class="more"> Read More </a>'+
+                '<span style="display:none;">'+ t.slice(60,t.length)+' <a href="#" class="less"> Read Less </a></span>'
+            );
+        }); 
+        $('a.more', minimized_elements).click(function(event){
+            event.preventDefault();
+            $(this).hide().prev().hide();
+            $(this).next().show();        
+        });
+        
+        $('a.less', minimized_elements).click(function(event){
+            event.preventDefault();
+            $(this).parent().hide().prev().show().prev().show();    
+        });
+    });
