@@ -175,9 +175,13 @@ ul.navbar-nav .nav-item.non-active:after {
 }
 
 
-@media (max-width:988px){
+@media (max-width:991px){
      .navbar {
         background-color:#234360;
+        color: white !important;
+    }
+    .nav-link,.navbar-brand,.navbar-toggler{
+      color: white !important;
     }
 }
 
